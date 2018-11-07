@@ -1,0 +1,36 @@
+
+body {
+	background-color: #ccc;
+}
+
+
+
+
+#wrapper {
+	width: 90%;
+	max-width: 1024px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+
+#content {
+	width: 70.3125%; /* 720px / 1024px  */
+	float: left;
+}
+
+#sidebar {
+	width: 27.34375%; /* 280px / 1024px */
+	float: right;
+}
+
+
+#colophon {
+	clear: both;
+	border-top: 1px solid #333;
+}
+
+
+img {
+	max-width: 100%;
+}
