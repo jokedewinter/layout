@@ -1,0 +1,93 @@
+
+/*
+
+The header gets a fixed height to make it into a masthead.
+
+The border is there to give us an idea where it starts and stops.
+
+The position relative is because we are going to do funny things with the content.
+
+The overflow scroll, will keep all the stuff in the header within the 300 px height, 
+but allow it to scroll to show the remaining stuff too.
+*/
+
+header {
+  height: 300px;
+  overflow: scroll;
+  border: 3px solid red;
+  position: relative;
+}
+
+
+/*
+The width of the image can't be bigger than the width of the header. 
+
+We are positioning the image absolute so that it sits at the top of the header box.
+
+And the image needs to sit underneath the text in the layer order, so the z-index is a low number.
+*/
+
+img {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+
+/*
+Both h1 and p get the same styles, so I am using a comma between them.
+
+They are positioned relative to reinforce they need to behave as normal.
+
+The z-index is a high number to make sure both elements sit above the image in the layer order.
+
+The padding is to move the text away from the edges of the header box.
+*/
+
+h1,
+p {
+  z-index: 100;
+  position: relative;
+  color: white;
+  padding: 30px;
+}
+
+
+h1 {
+	font-size: 30px;
+}
+
+
+p {
+	font-size: 20px;
+}
+
+/*    ----------------------------------------  */
+
+/*
+
+These styles turn the link into a button.
+
+*/
+
+
+p a {
+  text-decoration: none;
+  background-color: peru;
+  padding: 10px;
+  color: #fff;
+}
+
+
+/*
+
+This will take effect once the mouse is hovering over the button.
+
+*/
+
+
+p a:hover {
+  background-color: green;
+}
+
