@@ -34,3 +34,10 @@ body {
 img {
 	max-width: 100%;
 }
+
+@media screen and (max-width: 500px ) {
+	#masthead p { 
+		color: red;
+		font-weight: bold;
+	}
+}
